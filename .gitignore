@@ -1,0 +1,25 @@
+# Fichiers de build
+/target/
+**/*.rs.bk
+
+# Fichiers temporaires d'édition
+*.swp
+*.swo
+*.bak
+*~
+
+# Fichiers de log ou de debug
+*.log
+
+# Fichiers générés par Rust/Cargo
+Cargo.lock
+
+# Base de données locale
+db/*.db
+
+# Si tu veux exclure d’autres fichiers temporaires de test
+*.sqlite
+*.sqlite3
+
+# NodeJS ou autres (au cas où)
+node_modules/
