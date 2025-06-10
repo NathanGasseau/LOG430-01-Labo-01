@@ -1,25 +1,46 @@
-# Fichiers de build
-/target/
-**/*.rs.bk
-
-# Fichiers temporaires d'édition
-*.swp
-*.swo
-*.bak
-*~
-
-# Fichiers de log ou de debug
-*.log
-
-# Fichiers générés par Rust/Cargo
-Cargo.lock
+# === Django ===
 
 # Base de données locale
-db/*.db
-
-# Si tu veux exclure d’autres fichiers temporaires de test
 *.sqlite
 *.sqlite3
+db/*.db
 
-# NodeJS ou autres (au cas où)
+# Fichiers de migration compilés
+**/__pycache__/
+**/*.py[cod]
+
+# Fichiers de logs et temporaires
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.bak
+*.swp
+*.swo
+*~
+
+# Media / static files (à ajuster selon ton setup)
+media/
+staticfiles/  # collectstatic output (si utilisé)
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Fichiers secrets et de configuration locaux
+.env.local
+.env.production
+.env.development
+*.env
+
+# === Rust (si applicable) ===
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# === Node.js (si applicable) ===
 node_modules/
